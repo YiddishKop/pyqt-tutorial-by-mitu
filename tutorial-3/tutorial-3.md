@@ -3,6 +3,14 @@
 `ctrl + r` 用来实现UI界面快速预览
 
 
+### QMianWindow, QWidget, QDialog 区别
+
+QWidget :is a base class for all other GUI elements in QtWidgets module. It can constitute a window by itself, or be part of a QLayout, or just a member of parent-child hierarchy.
+
+QDialog :is usually used to - surprise! - display a temporary dialog when user input is required.
+
+QMainWindow :is a convenience class that can be used as the main window of your application. It has some nice features built-in: a status bar, tool bars and a menu bar
+
 ### signal and slot
 当你需要实现类似鼠标点击事件，就需要用到 signal and slot (信号和槽) 的概念：
 1. 这个功能通过菜单栏  edit -> signal slot 打开
@@ -22,3 +30,8 @@
 4. 实现事件响应函数
    1. 本节课程序是将 `self.pushButton.clicked.connect(MainWindow.button_click)` 改成了 `self.pushButton.clicked.connect(self.button_click)`
    2. `MainWindow` 换成 `self` 是把事件响应函数直接放在界面 python 文件中了
+
+
+### setupUi 方法
+
+通过 pyuic(ui) = py 生成的界面python文件会自动带有该方法， 界面中的所有控件的生成都在该方法内。

@@ -8,6 +8,10 @@
 1. `QDropEvent.mimeData().urls()`   --> 获取多个拖拽文件地址
 2. `QDropEvent.mimeData().text()`   --> 获取单个拖拽文件地址
 
+可以参考官方文档，更详细了解两个函数：
+
+https://doc.qt.io/qt-5/qmimedata.html#urls
+
 
 ## drag and drop 动作包含4个事件
 1. dragEnterEvent   拖拽文件进入 qt 窗口

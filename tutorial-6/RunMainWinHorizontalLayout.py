@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication
-from ui.Ui_MainWinHorizontalLayout import *
+from ui.Ui_MainWinGandHLayout import *
 import sys
 
 
